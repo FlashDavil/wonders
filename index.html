@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    
+    <title>7 Wonders</title>
+</head>
+<body>
+    <header>
+        <!-- <h1>7 Чудес</h1> -->
+    </header>
+
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
+        <strong>Внимание!</strong> Переверните экран.
+      </div>
+
+    <div><button type="button" class="btn" id="submit">СЧЁТ ИГРЫ</button></div> 
+
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr class="foot">
+                    <th>ИГРОКИ</th>
+                    <th>ПЛАНШЕТ</th>
+                    <th>МОНИТЫ</th>
+                    <th>ВОЙНА</th>
+                    <th>СИНИЕ</th>
+                    <th>ЖЁЛТЫЕ</th>
+                    <th>ЗЕЛЁНЫЕ</th>
+                    <th>ГИЛЬДИИ</th>
+                    <th>СЧЁТ</th>  
+                </tr>
+            </thead>
+                <tbody id="table">
+                    <tr>
+                        <td><input class="radius" type="text" placeholder="Имя игрока" id="player1" value=""></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input1"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input2"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input3"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input4"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input5"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input6"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input7"></td>
+                        <td><h2 id="result1">0</h2></td>
+                    </tr>
+                    <tr>
+                        <td><input class="radius" type="text" placeholder="Имя игрока" id="player2" value=""></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input11"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input22"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input33"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input44"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input55"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input66"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input77"></td>
+                        <td><h2 id="result2">0</h2></td>
+                    </tr>
+                    <tr>
+                        <td><input class="radius" type="text" placeholder="Имя игрока" id="player3" value=""></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input111"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input222"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input333"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input444"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input555"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input666"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input777"></td>
+                        <td><h2 id="result3">0</h2></td>
+                    </tr>
+                    <tr>
+                        <td><input class="radius" type="text" placeholder="Имя игрока" id="player4" value=""></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input1111"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input2222"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input3333"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input4444"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input5555"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input6666"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input7777"></td>
+                        <td><h2 id="result4">0</h2></td>
+                    </tr>
+                    <tr>
+                        <td><input class="radius" type="text" placeholder="Имя игрока" id="player5" value=""></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input11111"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input22222"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input33333"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input44444"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input55555"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input66666"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input77777"></td>
+                        <td><h2 id="result5">0</h2></td>
+                    </tr>
+                    <tr>
+                        <td><input class="radius" type="text" placeholder="Имя игрока" id="player6" value=""></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input111111"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input222222"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input333333"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input444444"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input555555"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input666666"></td>
+                        <td><input class="size" type="number" placeholder="Очки" id="input777777"></td>
+                        <td><h2 id="result6"></h2></td>
+                    </tr>
+  
+                </tbody>
+            </table>
+    </div>
+
+    <div><button type="button" class="btn" id="add">Добаыить Игрока</button></div> 
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <filter id="blur">
+            <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+            </filter>
+        </svg>
+</body>
+</html>
